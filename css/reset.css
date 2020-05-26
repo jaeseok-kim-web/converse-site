@@ -1,0 +1,6 @@
+/* 여백초기화 */
+body, div, dl, dd, dt, ul, ol, li, h1, h2, h3, h4, h5, h6, form, legend, textarea
+    , select, fieldset, p, button, input {
+        margin:0;
+        padding: 0;
+}

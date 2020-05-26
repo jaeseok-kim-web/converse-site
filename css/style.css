@@ -1,0 +1,1080 @@
+:root {
+    --font-color: #212121;
+    --hover-color: #8D8D8D;
+    --background-color: #fff;
+}
+/* wrap 시작 */
+.wrap {
+    width: 100%;
+    height: 100%;
+}
+/* header 시작 */
+.header {
+    width: 95%;
+    height: 50px;
+    display: flex;
+    margin: 0px 30px;
+    justify-content: space-between;
+    position: fixed;
+    background-color: var( --background-color);
+    z-index: 10;
+}
+/* header_menu 시작 */
+.header_menu {
+    flex: 1;
+    height: 50px;
+    padding: 5px;
+}
+
+.header_menu li {
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    line-height: 20px;
+    margin:5px 10px;
+}
+
+.header_menu li img {
+    width: 150px;
+    margin-top: 5px;
+}
+
+.header_menu li a {
+    text-decoration: none;
+    color: var(--font-color);
+    margin-right: 5px;
+    margin-bottom: 40px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.header_menu li a:hover {
+    color: var(--hover-color);
+}
+/* header_icon 시작 */
+.header_icon {
+    flex: 1;
+}
+.header_icon .search{
+    float:right;
+    margin-top:5px;
+}
+.header_icon .icon {
+    display: flex;
+    float: right;
+    color: var(--font-color);
+    list-style: none;
+    cursor: pointer;
+    margin-top:10px;
+    margin-right: 20px;
+}
+
+.header_icon .icon:hover {
+    color: var(--hover-color);
+}
+
+.header_icon .search {
+    background: #000;
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+}
+
+.header_icon .search > p {
+    color: var(--background-color);
+    float: left;
+}
+
+.header_icon .search .fa-sistrix {
+    color: var(--background-color);
+    padding-left:150px;
+}
+
+/* content 시작 */
+.content {
+    width: 95%;
+    height: 100%;
+    margin: 0px 30px;
+}
+/* content-main 시작 */
+#content-main {
+    width: 100%;
+    height: 100%;
+}
+
+/* summer-tee 시작 */
+#content-main .summer-tee{
+    display:flex;
+}
+#content-main .summer-tee .summer-collection{
+    flex:1;
+}
+#content-main .summer-tee .summer-collection img{
+    width:100%;
+    height:100%;
+}
+/* weekend-fun 시작 */
+#content-main .summer-tee .weekend-fun{
+    flex:1; 
+}
+#content-main .summer-tee .weekend-fun h1{
+    font-weight: bold;
+    margin-top:100px;
+    margin-bottom: 20px;;
+    text-align: center;
+}
+#content-main .summer-tee .weekend-fun p{
+    text-align: center;
+    line-height: 20px;
+}
+#content-main .summer-tee .weekend-fun p:nth-child(4){
+    margin-bottom: 10px;
+}
+#content-main .summer-tee .weekend-fun a{
+    margin-top: 50px;
+    text-decoration: none;
+}
+#content-main .summer-tee .weekend-fun a:hover{
+    text-decoration: underline;
+    color: var(--hover-color);
+}
+/* summer-best 시작  */
+#content-main .summer-best{
+    display:flex;
+    position: relative;
+}
+/* summer-best-1 시작 */
+#content-main .summer-best .summer-best-1{
+    flex:1;
+    background-image: url("../img/10020931-A04_10020931-A04_primary.jfif");
+    background-size: cover;
+    height: 50vh;
+}
+#content-main .summer-best .summer-best-1:hover{
+    background-image: url("../img/10020931-A04_10020931-A04_hover.jfif");
+}
+#content-main .summer-best .summer-best-1 .fa-heart{
+    margin:10px;
+}
+#content-main .summer-best .summer-best-1 .fa-heart:hover{
+    transform: scale(1.3);
+}
+#content-main .summer-best .summer-best-1 > p{
+    float: right;
+    font-weight: bold;
+    margin:10px;
+}
+#content-main .summer-best .summer-best-1  .description{
+    position: absolute;
+    bottom:0;
+    margin:20px;
+}
+/* summer-best-2 시작 */
+#content-main .summer-best .summer-best-2{
+    flex:1;
+    position: relative;
+    height:50vh;
+    
+}
+#content-main .summer-best .summer-best-2 > p{
+    color:var(--background-color);
+    position: absolute;
+    width:100%;
+    height:100%;
+    margin:10px;
+}
+#content-main .summer-best .summer-best-2 .text{
+    position: absolute;
+    background-color: rgba(0, 0, 0, .7);
+    width:100%;
+    height:100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+#content-main .summer-best .summer-best-2 .text:hover{
+    opacity: 1;
+}
+#content-main .summer-best .summer-best-2 .text h3{
+    width:100%;
+    height: 90%;
+    opacity: 1;
+    color: var(--background-color);
+    text-align: center;
+    padding-top:220px;
+}
+#content-main .summer-best .summer-best-2 .text p{
+    margin:10px;
+    color: var(--background-color);
+}
+#content-main .summer-best .summer-best-2 img{
+    width:100%;
+    height:50vh;
+}
+/* summer-best-3 시작 */
+#content-main .summer-best .summer-best-3{
+    flex:1;    
+    background-image: url("../img/10018347-A05_10018347-A05_primary.jfif");
+    background-size: cover;
+    height: 50vh;
+}
+#content-main .summer-best .summer-best-3:hover{
+    background-image: url("../img/10018347-A05_10018347-A05_hover.jfif");
+}
+#content-main .summer-best .summer-best-3 .fa-heart{
+    margin:10px;
+}
+#content-main .summer-best .summer-best-3 .fa-heart:hover{
+    transform: scale(1.3);
+}
+#content-main .summer-best .summer-best-3 > p{
+    float:right;
+    font-weight: bold;
+    margin:10px;
+}
+#content-main .summer-best .summer-best-3 .description{
+    position:absolute;
+    bottom:0;
+    margin:20px;
+}
+/* summer-best-4 시작 */
+#content-main .summer-best .summer-best-4{
+    flex:1;
+    position:relative;
+    height: 50vh;
+}
+#content-main .summer-best .summer-best-4 > p{
+    position: absolute;
+    width:100%;
+    height:100%;
+    color:var(--background-color);
+    margin:10px;
+}
+#content-main .summer-best .summer-best-4 .text{
+    position: absolute;
+    background-color: rgba(0, 0, 0, .7);
+    width:100%;
+    height:100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+#content-main .summer-best .summer-best-4 .text:hover{
+    opacity:1;
+}
+#content-main .summer-best .summer-best-4 .text h3{
+    width:100%;
+    height:90%;
+    opacity:1;
+    color:var(--background-color);
+    text-align: center;
+    padding-top:220px;
+}
+#content-main .summer-best .summer-best-4 .text p{
+    margin:10px;
+    color:var(--background-color);
+}
+#content-main .summer-best .summer-best-4 img{
+    width:100%;
+    height:50vh;
+}
+
+/* chooseIcon 시작 */
+#content-main .chooseIcon{
+    width:100%;
+    height:400px;
+    display:flex;
+}
+#content-main .chooseIcon .chooseIcon-1{
+    flex:1;
+}
+#content-main .chooseIcon .chooseIcon-2{
+    flex:2;
+}
+#content-main .chooseIcon .chooseIcon-2 .inner{
+    display:block;
+    height:100%;
+    
+}
+#content-main .chooseIcon .chooseIcon-2 .inner .shoes{
+    height:50%;
+}
+#content-main .chooseIcon .chooseIcon-2 .inner .shoes a{
+    text-decoration: none;
+}
+#content-main .chooseIcon .chooseIcon-2 .inner .shoes h1{
+    text-align: center;
+    margin:30px;
+}
+#content-main .chooseIcon .chooseIcon-2 .inner .shoes p{
+    text-align: center;
+}
+#content-main .chooseIcon .chooseIcon-2 .inner .shoes p:hover{
+    color:var(--hover-color);
+    text-decoration: underline;
+}
+#content-main .chooseIcon .chooseIcon-2 .inner .shoes-img{
+    height:70%;
+    display:flex;
+    cursor: pointer;
+}
+#content-main .chooseIcon .chooseIcon-2 .inner .shoes-img p{
+    text-align: center;
+    font-weight: bold;
+    display: block;
+}
+#content-main .chooseIcon .chooseIcon-3{
+    flex:1;
+}
+/* content-collection 시작 */
+#content-collection {
+    width: 100%;
+    height: 100%;
+    display:block;
+}
+/* collection1 시작 */
+#content-collection .collection1{
+    display:flex;
+}
+#content-collection .collection1 .smile{
+    flex:1;
+}
+#content-collection .collection1 .smile img{
+    width:100%;
+}
+#content-collection .collection1 .jack-purcell{
+    flex:1;
+    background-image: url("../img/Home_02_1440x900_02.jfif");
+    background-size: cover;
+}
+#content-collection .collection1 .jack-purcell .text{
+    margin-top:60px;
+    text-align: center;
+}
+#content-collection .collection1 .jack-purcell .text p{
+    margin-top:10px;
+    line-height: 15px;
+}
+#content-collection .collection1 .jack-purcell .text a{
+    text-decoration: none;
+}
+#content-collection .collection1 .jack-purcell .text a:hover{
+    text-decoration: underline;
+    color: var(--hover-color);
+}
+/* collection2 시작 */
+#content-collection  .collection2{
+    display:flex;
+    position: relative;
+}
+/* happy1 시작 */
+#content-collection  .collection2 .happy1{
+    flex:1;
+    background-image: url("../img/167922C_167922C_primary.jfif");
+    background-size: cover;
+    height:50vh;
+}
+#content-collection  .collection2 .happy1:hover{
+    background-image: url("../img/167922C_167922C_hover.jfif");
+}
+#content-collection  .collection2 .happy1 .fa-heart{
+    margin:10px;
+}
+#content-collection  .collection2 .happy1 .fa-heart:hover{
+    transform: scale(1.3);
+}
+#content-collection  .collection2 .happy1 > p{
+    float:right;
+    font-weight: bold;
+    margin:10px;
+}
+#content-collection  .collection2 .happy1 .description{
+    position: absolute;
+    bottom:0;
+    margin:20px;
+}
+/* happy2 시작 */
+#content-collection  .collection2 .happy2{
+    flex:1;
+    position: relative;
+    height:50vh;
+}
+#content-collection  .collection2 .happy2 > p{
+    color:var(--background-color);
+    position: absolute;
+    width:100%;
+    height:100%;
+    margin:10px;
+}
+#content-collection  .collection2 .happy2 .text{
+    position: absolute;
+    background-color: rgba(0, 0, 0, .7);
+    width:100%;
+    height:100%;
+    opacity:0;
+    transition: opacity 0.5s;
+}
+#content-collection  .collection2 .happy2 .text:hover{
+    opacity:1;
+}
+#content-collection  .collection2 .happy2 .text h3{
+    width:100%;
+    height:100%;
+    opacity:1;
+    color:var(--background-color);
+    text-align: center;
+    padding-top: 220px;
+}
+#content-collection  .collection2 .happy2 .text p{
+    margin:10px;
+    color: var(--background-color);
+}
+#content-collection  .collection2 .happy2 img{
+    width:100%;
+    height:50vh;
+}
+/* cove1 시작 */
+#content-collection  .collection2 .cove1{
+    flex:1;
+    background-image: url("../img/167765C_167765C_primary.jfif");
+    background-size: cover;
+    height:50vh;
+}
+#content-collection  .collection2 .cove1:hover{
+    background-image: url("../img/167765C_167765C_hover.jfif");
+}
+#content-collection  .collection2 .cove1 .fa-heart{
+    margin:10px;
+}
+#content-collection  .collection2 .cove1 .fa-heart:hover{
+    transform: scale(1.3);
+}
+
+#content-collection  .collection2 .cove1 .description{
+    position: absolute;
+    bottom:0;
+    margin:20px;
+}
+/* cove2 시작 */
+#content-collection  .collection2 .cove2{
+    flex:1;
+    position: relative;
+    height:50vh;
+}
+#content-collection  .collection2 .cove2 > p{
+    position: absolute;
+    width:100%;
+    height:100%;
+    color:var(--background-color);
+    margin:10px;
+}
+#content-collection  .collection2 .cove2 .text{
+    position: absolute;
+    background-color: rgba(0, 0, 0, .7);
+    width:100%;
+    height:100%;
+    opacity:0;
+    transition: opacity 0.5s;
+}
+#content-collection  .collection2 .cove2 .text:hover{
+    opacity: 1;
+}
+#content-collection  .collection2 .cove2 .text h3{
+    width:100%;
+    height:100%;
+    opacity: 1;
+    color:var(--background-color);
+    text-align: center;
+    padding-top: 220px;
+}
+#content-collection  .collection2 .cove2 .text p{
+    margin: 10px;
+    color:var(--background-color);
+}
+#content-collection  .collection2 .cove2 img{
+    width:100%;
+    height:50vh;
+}
+/* content-best 시작*/
+#content-best {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* concreteheat 시작 */
+#content-best .concreteheat {
+    position: absolute;
+    padding:20px;
+}
+#content-best .concreteheat-image{
+    position: relative;
+    background-image: url("../img/Home_02_1440x900.jfif");
+    background-size: cover;
+    height:100vh;
+}
+
+#content-best .concreteheat::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+#content-best .concreteheat .description{
+    margin-top:20px;
+}
+#content-best .concreteheat input{
+    width: 150px;
+    height: 30px;
+    margin: 10px;
+    background-color: var(--background-color);
+}
+/* one-star 시작 */
+#content-best .one-star {
+    display: flex;
+}
+#content-best .one-star .slide{
+    flex: 1;
+    display:block;
+}
+/* slide-new 시작 */
+#content-best .one-star .slide .slide-new{
+    background-image: url("../img/Home_02_1440x900.gif");
+    background-size: cover;
+    background-position: bottom right;
+    width:100%;
+    height: 60vh;
+    padding-top: 10px;
+}
+#content-best .one-star .slide .slide-new .sandle{
+    color: var(--background-color);
+    margin: 10px;
+    
+}
+#content-best .one-star .slide .slide-new > h1{
+    color: var(--background-color);
+    margin: 10px;
+}
+#content-best .one-star .slide .slide-new .sandle-hover{
+    width:80px;
+    height:20px;
+}
+#content-best .one-star .slide .slide-new .sandle-hover:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    opacity: .8;
+}
+
+/* one-star-sandle 시작 */
+#content-best .one-star .sandle {
+    display: flex;
+}
+
+/* sandle-1 시작 */
+#content-best .one-star .sandle .sandle-1{
+    background-image: url("../img/567723C_567723C_primary.jfif");
+    background-size: cover;
+    background-position: center;
+    flex:1;
+    width: 50%;
+    height: 80vh;
+    position: relative;
+}
+
+#content-best .one-star .sandle .sandle-1:hover{
+    background-image: url("../img/567723C_567723C_hover.jfif");
+}
+#content-best .one-star .sandle .sandle-1 .fa-heart{
+    float:left;
+    margin-left:10px;
+    margin-top: 10px;
+}
+#content-best .one-star .sandle .sandle-1 .fa-heart:hover{
+    transform: scale(1.3);
+}
+#content-best .one-star .sandle .sandle-1  .new {
+    float: right;
+    width:100px;
+    height:40px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+#content-best .one-star .sandle .sandle-1 .bottom{
+    width:130px;
+    height:50px;
+    position: absolute;
+    bottom:0;
+    left:20px;   
+}
+/* sandle-2 시작 */
+#content-best .one-star .sandle .sandle-2{
+    background-image: url("../img/564143C_564143C_primary.jfif");
+    background-size: cover;
+    background-position: center;
+    flex:1;
+    width: 50%;
+    height: 80vh;
+    position: relative;
+}
+#content-best .one-star .sandle .sandle-2:hover{
+    background-image: url("../img/564143C_564143C_hover.jfif");
+}
+#content-best .one-star .sandle .sandle-2 .fa-heart{
+    float:left;
+    margin-left:10px;
+    margin-top: 10px;
+}
+#content-best .one-star .sandle .sandle-2 .fa-heart:hover{
+    transform: scale(1.3);
+}
+#content-best .one-star .sandle .sandle-2 .new{
+    float: right;
+    width:100px;
+    height:40px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+#content-best .one-star .sandle .sandle-2 .bottom1{
+    width:130px;
+    height:50px;
+    position: absolute;
+    bottom:0;
+    left:20px;  
+}
+
+/* street 시작 */
+#content-best .one-star .street {
+    flex: 1;
+    position: relative;
+    background-image: url("../img/01_Home_03_720x900_배너.jfif");
+    background-size: cover;
+    transition: opacity 2s;
+    opacity: 1;
+}
+#content-best .one-star .street:hover .text{
+    background-color: rgb(0, 0, 0);
+    opacity: 0.7;
+    width:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    color:var(--background-color);
+    padding:20px;
+}
+#content-best .one-star .street .text{
+    width:100%;
+    height:100%;
+    opacity: 0;
+    color:var(--background-color);
+}
+#content-best .one-star .street > p{
+    color:var(--background-color);
+    padding:20px;
+}
+#content-best .one-star .street .text > h1{
+    opacity:0.7;
+    text-align:center;
+    padding-top:350px;
+    color:var(--background-color);
+}
+
+/* content-best 시작 */
+#content-best .suede{
+    display: flex;
+}
+
+/* suede-left 시작 */
+#content-best .suede .suede-left {
+    flex: 1;
+    color:var(--background-color);
+    
+}
+#content-best .suede .suede-left .earth{ 
+    background-image: url("../img/두번째\ 밤하늘.jfif");
+    background-size: cover;
+    position: relative;
+    width:100%;
+    height:100%;
+    padding:20px;
+}
+#content-best .suede .suede-left .description{
+    margin-top: 20px;
+}
+#content-best .suede .suede-left input{
+    width: 150px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left:10px;
+    border:1px solid var(--background-color);
+    background-color: var(--font-color);
+    color: var(--background-color);
+}
+#content-best .suede .suede-left input:hover{
+    opacity: 0.8;
+}
+/* suede-right 시작 */
+#content-best .suede .suede-right {
+    flex: 1;
+    display: block;
+}
+/* aston-top 시작 */
+#content-best .suede .suede-right .aston-top {
+    display: flex;
+}
+/* aston-left1 시작 */
+#content-best .suede .suede-right .aston-top .aston-left1 {
+    flex:1;
+    position: relative;
+    height:60vh;
+}
+
+#content-best .suede .suede-right .aston-top .aston-left1  .text{
+    position: absolute;
+    background-color: rgba(0, 0, 0,.7);
+    width:100%;
+    height:100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+#content-best .suede .suede-right .aston-top .aston-left1  .text:hover{
+    opacity:1;
+}
+
+#content-best .suede .suede-right .aston-top .aston-left1  .text h3{
+    width:100%;
+    height:100%;
+    opacity: 1;
+    color:var(--background-color);
+    text-align: center;
+    margin:0 auto;
+    padding-top: 300px;
+}
+#content-best .suede .suede-right .aston-top .aston-left1  img{
+    width:100%;
+    height:100%;
+}
+/* aston-right1 시작 */
+#content-best .suede .suede-right .aston-top .aston-right1 {
+    flex:1;
+    background-image: url("../img/167765C_167765C_primary.jfif");
+    background-size: cover;
+    position: relative;
+}
+#content-best .suede .suede-right .aston-top .aston-right1:hover{
+    background-image: url("../img/167765C_167765C_hover.jfif");
+}
+#content-best .suede .suede-right .aston-top .aston-right1 .fa-heart{
+    float:left;
+    margin-left:10px;
+    margin-top: 10px;
+}
+#content-best .suede .suede-right .aston-top .aston-right1 .fa-heart:hover{
+    transform: scale(1.3);
+}
+#content-best .suede .suede-right .aston-top .aston-right1 .bottom1{
+    width:250px;
+    height:50px;
+    position: absolute;
+    bottom:0;
+    left:20px;
+}
+/* aston-bottom 시작 */
+#content-best .suede .suede-right .aston-bottom {
+    display: flex;
+}
+/* aston-left2 시작 */
+#content-best .suede .suede-right .aston-bottom .aston-left2{
+    flex:1;
+    background-image: url("../img/167890C_167890C_primary.jfif");
+    background-size: cover;
+    position: relative;
+   
+}
+#content-best .suede .suede-right .aston-bottom .aston-left2:hover{
+    background-image: url("../img/167890C_167890C_hover.jfif");
+}
+#content-best .suede .suede-right .aston-bottom .aston-left2 .fa-heart{
+    float:left;
+    margin-left:10px;
+    margin-top: 10px;
+}
+#content-best .suede .suede-right .aston-bottom .aston-left2 .fa-heart:hover{
+    transform: scale(1.3);
+}
+#content-best .suede .suede-right .aston-bottom .aston-left2 .bottom1{
+    width:250px;
+    height:50px;
+    position: absolute;
+    bottom:0;
+    left:20px;
+}
+/* aston-right2 시작 */
+#content-best .suede .suede-right .aston-bottom .aston-right2{
+    flex:1;
+    position: relative;
+    height:60vh;
+}
+
+#content-best .suede .suede-right .aston-bottom .aston-right2 .text{
+    position: absolute;
+    background-color: rgba(0, 0, 0,.7);
+    width:100%;
+    height:100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+#content-best .suede .suede-right .aston-bottom .aston-right2 .text:hover{
+    opacity: 1;
+}
+
+#content-best .suede .suede-right .aston-bottom .aston-right2 .text h3{
+    width:100%;
+    height:100%;
+    opacity:1;
+    color:var(--background-color);
+    margin:0 auto;
+    text-align: center;
+    padding-top: 300px;
+}
+#content-best .suede .suede-right .aston-bottom .aston-right2 img{
+    width:100%;
+    height:100%;
+}
+#content-community {
+    width: 100%;
+    height: 100%;
+}
+.community_header {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.community_header > p {
+    font-weight: 700;
+    font-size: 36px;
+}
+.community_container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-evenly;
+}
+.community_container > a {
+    width: 24%;
+    box-sizing: border-box;
+}
+.community_container > a > img {
+    width: 100%;
+    height: 100%;
+}
+.community_footer {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    padding: 20px 0;
+}
+.community_footer > button {
+    width: 98.5%;
+    background-color: #fff;
+    border: 1px solid #d3d3d4;
+    padding: 0.5%;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.community_footer > img {
+    width: 50px;
+    position: absolute;
+    left: 48.5%;
+    top: 0;
+    display: none;
+}
+.community_footer > button:hover {
+    background-color: rgb(112, 112, 112);
+    color: #fff;
+}
+
+/* service 시작 */
+.service {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #E7E7E7;
+    display: flex;
+    margin-top: 100px;
+}
+
+.service .service-delivery{
+    flex:1;
+    border:1px solid #E7E7E7;
+}
+
+.service .service-delivery .delivery{
+    width:50px;
+    height:50px;
+    display:block;
+    margin:20px auto;
+}
+.service .service-delivery  h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.service .service-delivery  p{
+    text-align: center;
+}
+.service .service-return{
+    flex:1;
+    border:1px solid #E7E7E7;
+}
+.service .service-return .return{
+    width:50px;
+    height:50px;
+    display:block;
+    margin:20px auto;
+}
+.service .service-return  h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.service .service-return  p{
+    text-align: center;
+}
+.service .service-exchange{
+    flex:1;
+    border:1px solid #E7E7E7;
+}
+
+.service .service-exchange .exchange{
+    width:50px;
+    height:50px;
+    display:block;
+    margin:20px auto;
+}
+.service .service-exchange  h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.service .service-exchange  p{
+    text-align: center;
+}
+.service .service-sns{
+    flex:1;
+    border:1px solid #E7E7E7;
+}
+.service .service-sns .facebook{
+    width:50px;
+    height:50px;
+    display:block;
+    margin:20px auto;
+}
+.service .service-sns  h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.service .service-sns  p{
+    text-align: center;
+}
+
+/* information 시작*/
+.information{
+    width:100%;
+    height:150px;
+    margin-top:50px;
+    display: flex;
+    border:1px solid #E7E7E7;
+}
+.information .information-sns{
+    flex:1;
+    border:1px solid #E7E7E7;
+}
+.information .information-sns p{
+    font-weight: bold;
+}
+.information .information-sns .facebook{
+    width:50px;
+    height:50px;
+    display: block;
+    margin: 10px;    
+}
+.information .information-support{
+    flex:1;    
+    border:1px solid #E7E7E7;
+}
+.information .information-support > p{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.information .information-support a{
+    text-decoration: none;
+    line-height: 30px;
+}
+.information .information-info{
+    flex:1;    
+    border:1px solid #E7E7E7;
+}
+.information .information-info > p{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.information .information-info a{
+    text-decoration: none;
+    line-height: 30px;
+}
+.information .information-policy{
+    flex:1;    
+    border:1px solid #E7E7E7;
+}
+.information .information-policy > p{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.information .information-policy a{
+    text-decoration: none;
+    line-height: 30px;
+}
+.information .information-sites{
+    flex:1;    
+    border:1px solid #E7E7E7;
+}
+.information .information-sites > p{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.information .information-sites a{
+    text-decoration: none;
+    line-height: 30px;
+}
+
+/* footer 시작 */
+.footer {
+    width: 100%;
+    height: 200px;
+    background-color: #000;
+    padding-top:30px;
+    padding-left:100px;
+}
+.footer .footer-main{
+    width:90%;
+    height:100%;
+    display: flex;
+}
+.footer .footer-main .left{
+    flex:1;
+}
+.footer .footer-main .left p{
+    color: var(--hover-color);
+    line-height: 20px;
+}
+.footer .footer-main .empty{
+    flex:1;
+}
+.footer .footer-main .right{
+    flex:1;
+}
+.footer .footer-main .right p{
+    color: var(--hover-color);
+    line-height: 20px;
+}
